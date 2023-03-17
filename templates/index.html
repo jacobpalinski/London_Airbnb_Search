@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>London Airbnb Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="static\images\united-kingdom.png">
 </head>
 <body>
+    <header>
+        <div class="head">
+            <span class="image"><img src="static\images\uk-flag.png"></span>
+            <span class="header"><h1>London Airbnb Search</h1></span>
+        </div>
+    </header>
+    <div class="filters">
+        <button class="button">Neighbourhood</button>
+        <button class="button">Accommodates</button>
+    </div>
     
 </body>
 </html>
