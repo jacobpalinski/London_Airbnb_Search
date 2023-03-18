@@ -3,9 +3,21 @@
     src: url('https://fonts.googleapis.com/css?family=Inter');
 }
 
+html, body {
+    height:100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background-image: url('../images/london-background.jpg');
+    background-position:bottom;
+    background-size: cover;
+}
+
 .head {
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     height: 80px;
     background-color: #EB2226;
     text-align: center;
@@ -14,11 +26,14 @@
     position: relative;
     display: flex;
     align-items:center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left:auto;
 }
 
 .header {
     display: block;
+    position: absolute;
+    left: 40%;
 }
   
 .image img {
@@ -29,7 +44,7 @@
     position: absolute;
     top: 0%;
     bottom: 100%;
-    left: 30%;
+    left: 32%;
 }
 
 h1 {
@@ -42,6 +57,10 @@ h1 {
     width: 90%;
     margin: 0 auto;
     height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width : 80%;
 }
 
 .button {
@@ -61,5 +80,5 @@ h1 {
 }
 
 .button:hover {
-    border: 5px solid #075AAA;
+    border: 3.5px solid #075AAA;
 }
